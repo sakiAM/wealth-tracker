@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+myenv/
+env/
+venv/
+.venv/
+
+# Streamlit secrets (CRITICAL - never commit!)
+.streamlit/secrets.toml
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database (we're using Supabase now, no local DB needed)
+*.db
+wealth_tracker.db
+
+# Environment variables
+.env
