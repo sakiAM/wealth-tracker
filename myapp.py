@@ -936,7 +936,7 @@ def show_dashboard():
                     return ''
                 
                 st.dataframe(
-                    rebalancing_df.style.applymap(color_actions, subset=['Action']),
+                    rebalancing_df.style.map(color_actions, subset=['Action']),
                     use_container_width=True
                 )
         
