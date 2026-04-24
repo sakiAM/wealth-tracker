@@ -7,8 +7,8 @@ class SupabaseDB:
     def __init__(self):
         # For now, hardcode your credentials (temporary)
         # Replace with your actual Supabase URL and key
-        self.supabase_url = "https://gyvlcszsznhrsqamwdwn.supabase.co"  # e.g., "https://xxxxx.supabase.co"
-        self.supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd5dmxjc3pzem5ocnNxYW13ZHduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0ODQwODQsImV4cCI6MjA5MjA2MDA4NH0.j0bjsRe3j85xj_RYYbnFdj9OigfFXgy66KSQ3nkGv_4"
+        self.supabase_url = st.secrets["SUPABASE_URL"]  # e.g., "https://xxxxx.supabase.co"
+        self.supabase_key = st.secrets["SUPABASE_KEY"]
          # Your anon public key
         self.client: Client = create_client(self.supabase_url, self.supabase_key)
     
